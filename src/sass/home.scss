@@ -1,0 +1,134 @@
+@import "colors.scss";
+@import "basePage.scss";
+
+.home {
+  @extend .base;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.profile-container{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.profile-im {
+  display: flex;
+  gap: 2em;
+  border-right: 1px solid ;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-icon{
+    display: flex;
+    padding: 16px 0;
+    gap: 1em;
+}
+.icon{
+    width: 24px;
+}
+.items{
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 2em;
+    
+} 
+
+.email{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.items li:hover{
+    color: $contrast-color;
+}
+
+.items li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.items li svg {
+    width: 24px;
+}
+
+.list-items{
+    display: grid;
+    margin-top: 16px;
+    gap: 12px;
+}
+.icon:hover{
+    cursor:pointer;
+    color: $contrast-color;
+}
+
+
+.who-im {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  
+}
+.who-im span {
+  padding: 1em 1em;
+  border-radius: 1em;
+}
+.who-im span:hover {
+  background-color: #ffffff10; 
+  color: $contrast-color;
+}
+
+.who-im span svg{
+    font-weight: 800;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: end;
+}
+
+.arrow svg {
+  font-size: 2em;
+}
+.handlers {
+  display: grid;
+}
+
+hr {
+  background-color: $secondary-color !important;
+}
+@media screen and (max-width: 600px) {
+    .profile-container{
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+    .profile-im{
+        border-right: 0px;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: left;
+        padding: 0px;
+    }
+    span.list-items{
+        margin-top: 0px;
+        gap: 8px;
+        padding: 16px 0;
+    }
+
+}

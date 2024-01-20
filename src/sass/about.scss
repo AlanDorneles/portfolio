@@ -1,0 +1,6 @@
+@import "colors.scss";
+@import 'basePage.scss';
+
+.about{
+    @extend .base
+}

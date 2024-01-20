@@ -1,0 +1,50 @@
+@import './colors.scss';
+
+
+
+.card-container{
+    max-width: 400px;
+    border: 1px solid $secondary-color;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    width: 360px;
+    
+
+}
+.card-container:hover{
+    color: $contrast-color;
+    border-color: $contrast-color;
+    background-color: #ffffff10; 
+}
+.card-container:hover > .rotulo{
+    color: $contrast-color;
+
+}
+.item {
+    display: flex;
+    gap: 4px;
+}
+.image-card{
+    border-radius: 12px;
+}
+.items-bib{
+    display: flex;
+    gap: 4px;
+    height: 100%;
+    flex-wrap: wrap;
+    
+}
+.item-bib{
+    background-color: $contrast-color-20;
+    border-radius: 8px;
+    height: 100%;
+    padding: 4px;
+
+
+}
+strong{
+    color: $contrast-color !important;
+}

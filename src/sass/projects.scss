@@ -1,0 +1,9 @@
+@import "colors.scss";
+@import 'basePage.scss';
+
+.projects{
+    @extend .base;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}

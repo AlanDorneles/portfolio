@@ -1,0 +1,27 @@
+@import './colors.scss';
+
+
+
+.tabs ul{
+    flex-grow: 1 !important;
+    padding-left: 4em;
+   
+}
+
+.container-text{
+    width: 100%;
+}
+
+.text{
+    color: $contrast-color !important;
+
+}
+
+@media screen and (max-width: 600px) {
+    ul.list-tabs{
+        padding: 0px;
+    }
+    div.text{
+        padding: 24px !important;
+    }
+}
